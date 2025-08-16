@@ -10,6 +10,7 @@ Here are some past topics of interest:
 **Modeling of complex systems:**
 Complex systems are common in fields ranging from physics, economics to social sciences. Using computational simulations, we can validate or challenge novel theories. I am particularly interested in using numerical methods in models to explore the impact of perturbations on the stability.
 
+
 **Combinatorial Optimization:**
 Most real world problems are quite convoluted. Addressing these problems poses multiple challenging questions: Is there a complete set of variables that can describe the system? Does the problem belong to a recognized problem class? What constraints do the variables have?
 
