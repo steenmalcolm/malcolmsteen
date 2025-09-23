@@ -1,7 +1,27 @@
-- title: 'Research Assistant'
-  description: 'RWTH University Physicalisches Institut III A'
-  year: '2021 - 2023'
-
+- title: 'Master Thesis'
+  description: 'Max Planck Institute for Dynamics and Self-Organization'
+  year: '2024 - Present'
+  supervisor:
+    name: 'David Zwicker'
+    url: 'https://www.zwickergroup.org/david-zwicker'
+    
 - title: 'Quantum Solutions Architect'
-  description: 'SavantX'
-  year: '2022 - 2023'
+  description: ''
+  year: '2022 - Present'
+  supervisor:
+    name: 'SavantX'
+    url: 'https://www.savantx.com/'
+
+- title: 'Research Assistant'
+  description: 'RWTH University Physics Institute III A'
+  year: '2021 - 2023'
+  supervisor:
+    name: 'Martin Erdmann'
+    url: 'https://www.institut3a.physik.rwth-aachen.de/cms/institut3a/das-institut/profil/~kdcq/prof-erdmann/?allou=1&lidx=1'
+
+- title: 'Bachelor Thesis'
+  description: 'RWTH University Institute for Theoretical Particle Physics and Cosmology'
+  year: '2022'
+  supervisor:
+    name: 'Julien Lesgourgues'
+    url: 'https://lesgourg.github.io/'

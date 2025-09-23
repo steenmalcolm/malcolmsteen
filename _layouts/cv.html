@@ -14,8 +14,8 @@ layout: default
       <div class="col-md-10">
         {% for section in site.data.cv.education %}
         <div class="d-flex align-items-baseline mb-1">
-          <p class="me-3 mb-0">{{ section.year }}</p>
           <p class="fw-bold mb-0">{{ section.title }}</p>
+          <p class="me-3 mb-0">{{ section.year }}</p>
         </div>
         <p>{{ section.description }}</p>
         {% endfor %}
@@ -28,10 +28,15 @@ layout: default
       <div class="col-md-10">
         {% for section in site.data.cv.academic-experience %}
         <div class="d-flex align-items-baseline mb-1">
-          <p class="me-3 mb-0">{{ section.year }}</p>
           <p class="fw-bold mb-0">{{ section.title }}</p>
+          <p class="me-3 mb-0">{{ section.year }}</p>
         </div>
         <p>{{ section.description }}</p>
+        {% if section.supervisor %}
+        (<a href="{{ section.supervisor.url }}" target="_blank" rel="noopener">
+          {{ section.supervisor.name }}
+        </a>)
+        {% endif %}
         {% endfor %}
       </div>
     </div>
