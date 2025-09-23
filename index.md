@@ -3,21 +3,17 @@ layout: home
 title: "Home"
 ---
 
-I am a quantum solutions architect at SavantX. My role primarily revolves around transforming challenges from various fields into problems that can be addressed by quantum annealers.
+Hi, I’m Malcolm — a master’s student in biophysics working on my thesis in complex fluid dynamics at the Max Planck Institute for Dynamics and Self-Organization. I did my bachelor’s in physics at RWTH Aachen, and over the years I’ve grown most excited about problems that sit at the intersection of statistical physics, numerical methods, and applications in soft and biological matter.
 
-Here are some past topics of interest:
+Some of my current interests include:
 
-**Modeling of complex systems:**
-Complex systems are common in fields ranging from physics, economics to social sciences. Using computational simulations, we can validate or challenge novel theories. I am particularly interested in using numerical methods in models to explore the impact of perturbations on the stability.
+Multi-component fluids and phase transitions. I study how surface tension and chemical potentials behave in ternary mixtures, developing approximations that improve both accuracy and simulation efficiency. I’m also using machine learning to explore phase diagrams and extrapolate binodal curves.
 
+Numerical methods for PDEs. My thesis work involves implementing fast and stable solvers (e.g. semi-implicit schemes, free energy gradient descent methods) for models like the Cahn–Hilliard equation. I use PyTorch for PDE solving, making GPU acceleration straightforward.
 
-**Combinatorial Optimization:**
-Most real world problems are quite convoluted. Addressing these problems poses multiple challenging questions: Is there a complete set of variables that can describe the system? Does the problem belong to a recognized problem class? What constraints do the variables have?
+Computational optimization. In past projects, I worked on algorithms for quantum devices, including PCA-based pruning of adjacency matrices and Bayesian optimization for circuit parameter tuning.
 
-**Statistics:**
-Although once a dreaded subject, I have come to appreciate the importance of statistics. Two instances that have piqued my interest are: 
-The Gaussian process, leverages Bayes’ theorem for function approximation and quantifying uncertainty.
-Variational Autoencoders (VAE), achieve their generative capabilities through the inclusion of noise.
+Looking ahead, I’m eager to apply and expand these skills in theoretical and computational biophysics — whether through advancing molecular dynamics methods for polymer physics, or tackling simulation challenges in energy systems such as hydrogen fuel cells.
 
 Some of my projects are on [github](https://github.com/steenmalcolm).
 
