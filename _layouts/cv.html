@@ -41,19 +41,21 @@ layout: default
         {% for section in site.data.cv.education %}
         <p class="me-3 mb-0"><em>{{ section.year }}</em></p>
         <p class="fw-bold mb-0">{{ section.title }}</p>
-        <p>{{ section.description }}</p>
-        {% if section.grade.ongoing %}
-        <p class="mb-0">Current Grade: {{ section.grade.current }}</p>
-        {% else %}
-        <p class="mb-0">Final Grade: {{ section.grade }}</p>
-        {% endif %}
+        <p>{{ section.description }}
+          <br>
+          {% if section.grade.ongoing %}
+          Current Grade: {{ section.grade.current }}
+          {% else %}
+          Final Grade: {{ section.grade }}
+          {% endif %}
+        </p>
         <div class="mb-3"></div> <!-- empty line -->
         {% endfor %}
       </div>
     </div>
     <div class="row g-5 mb-5">
       <div class="col-md-2">
-        <h4>Awards</h4>
+        <h4>Awards & Achievements</h4>
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.awards %}
