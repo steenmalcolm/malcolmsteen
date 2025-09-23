@@ -1,3 +1,12 @@
+- title: 'M.Sc. Physics'
+  description: 'Georg-August University Göttingen'
+  year: '2024 - Present'
+  grade: 
+    ongoing: true
+    current: '1.2'
+
+
 - title: 'B.Sc. Physics'
   description: 'RWTH Aachen University'
   year: '2019 - 2022'
+  grade: '1.5'
