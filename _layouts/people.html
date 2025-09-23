@@ -14,6 +14,11 @@ layout: default
           <p>{{ project.description }}</p>
         </div>
       </div>
+      <div class="col-md-6">
+        {% if project.image %}
+        <img src="{{ project.image }}" alt="{{ project.title }}" class="img-fluid rounded">
+        {% endif %}
+      </div>
       {% endfor %}
     </div>
   </div>
