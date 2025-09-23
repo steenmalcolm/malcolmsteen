@@ -35,9 +35,10 @@ layout: default
         <p>{{ section.description }}</p>
         {% endif %}
         {% if section.supervisor %}
-        Supervisor: <a href="{{ section.supervisor.url }}" target="_blank" rel="noopener">
-          {{ section.supervisor.name }}
-        </a>
+        <p>
+          Supervisor: <a href="{{ section.supervisor.url }}" target="_blank" rel="noopener">
+            {{ section.supervisor.name }}
+          </a></p>
         {% endif %}
         {% endfor %}
       </div>
