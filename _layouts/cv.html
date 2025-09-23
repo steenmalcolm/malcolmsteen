@@ -13,9 +13,10 @@ layout: default
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.education %}
-        <p class="me-3 mb-0">{{ section.year }}</p>
+        <p class="me-3 mb-0"><em>{{ section.year }}</em></p>
         <p class="fw-bold mb-0">{{ section.title }}</p>
         <p>{{ section.description }}</p>
+        <div class="mb-3"></div> <!-- empty line -->
         {% endfor %}
       </div>
     </div>
@@ -25,21 +26,23 @@ layout: default
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.academic-experience %}
-        <p class="me-3 mb-0"> {{ section.year }}</p>
+        <p class="me-3 mb-0"><em>{{ section.year }}</em></p>
         <p class="fw-bold mb-0">{{ section.title }}</p>
-        {% if section.description.url %}
-        <p><a href="{{ section.description.url }}" target="_blank" rel="noopener">
+        <p>{% if section.description.url %}
+          <a href="{{ section.description.url }}" target="_blank" rel="noopener">
             {{ section.description.name }}
-          </a></p>
-        {% else %}
-        <p>{{ section.description }}</p>
-        {% endif %}
-        {% if section.supervisor %}
-        <p>
+          </a>
+          {% else %}
+          {{ section.description }}
+          {% endif %}
+          {% if section.supervisor %}
+          <br>
           Supervisor: <a href="{{ section.supervisor.url }}" target="_blank" rel="noopener">
             {{ section.supervisor.name }}
-          </a></p>
-        {% endif %}
+          </a>
+          {% endif %}
+        </p>
+        <div class="mb-3"></div> <!-- empty line -->
         {% endfor %}
       </div>
     </div>
