@@ -20,7 +20,7 @@
     To get around this, I designed a hybrid quantum-classical algorithm that breaks the problem into smaller pieces solvable on current hardware. This works because, even though the system is frustrated, it still has local symmetries that can be exploited to shrink the effective problem size.
     On the quantum side, much of my work focused on fine-tuning schemes to balance two competing goals: achieving high-quality solutions while still satisfying hard constraints.
     This first stage of the work wrapped up with promising results, leading directly into a second phase with the U.S. Air Force.
-  image: 'assets/img/airforce.png'
+  image: 'assets/img/airforce.jpg'
 
 - title: 'Cosmological Simulation (Bachelor Thesis)'
   description: |
@@ -28,5 +28,4 @@
     One of the main findings was that perturbations to the gravitational potential are far more time-sensitive than those to the Hubble parameter. This likely stems from the fact that the potential depends on the inverse square of distance, making it highly responsive to even small changes in the matter distribution—whereas the Hubble parameter behaves more like a spatial average.
     This project required me to understand every component of running an efficient N-body simulation: mapping particles to a mesh, solving for the gravitational potential in Fourier space, and evolving particles using a leapfrog integrator.
     You can read the full thesis <a href="\publications\Bachelorarbeit.pdf"><em>here</em></a>.
-    
-  image: 'assets/img/home.jpg'
+  video: 'assets/videos/simulation.mp4'
