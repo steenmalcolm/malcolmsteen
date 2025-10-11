@@ -1,16 +1,32 @@
-- title: 'Ternary Mixtures'
+- title: 'Ternary Mixtures (Masters Thesis Ongoing)'
   description: |
-    Most of what we know about phase separation comes from studies of binary mixtures, but ternary mixtures (three components) are much less understood. In my project, I look at some of the unique properties of these systems.
-    To begin, I turned to the free energy and, using a three state Ising model, uncovered how local and gradient energy terms are related.
-    Building on this, I looked at the equilibrium profiles of ternary mixtures. These follow from the Euler–Lagrange equations, though solving them directly is intractable. Instead, I developed an analytical approximation that only requires information about the bulk phases, yet still lets us calculate important thermodynamic properties like surface tension.
+    Most of what we know about phase separation comes from studies of binary mixtures, but ternary mixtures are much less understood. In my project I look at some of the unique properties of these systems.
+    To begin, I turned to the free energy and using a three state Ising model, uncovered how local and gradient energy terms are related.
+    Building on this, I looked at the equilibrium profiles of ternary mixtures. Their shape follows from the Euler-Lagrange equations, though solving them directly is intractable. Instead, I developed an analytical approximation that only requires information about the bulk phases, yet still lets us calculate important thermodynamic properties like the surface tension.
     To check the accuracy of this approach, I also run field-based simulations. For this, I developed a semi-implicit solver that essentially acts as a low-pass filter, allowing time steps orders of magnitude larger than before and greatly improving efficiency.
   image: 'assets/img/home.jpg'
 
-- title: 'Air Cargo Network Optimization'
+- title: 'Coexistence Curve (Masters Thesis Ongoing)'
+  description: |
+    Finding the binodal for ternary mixtures is computationally expensive, especially since it has to be repeated for every new interaction matrix between species. In this project, I set out to build a kernel-based Support Vector Machine (SVM) that can learn to interpolate the coexistence curve, specifically for interaction matrices not included in the training data.
+    The training set consists of labeled points in phase space including their interaction matrix. The coexistence curve is defined by an implicit equation, but with a polynomial kernel, the SVM can solve it explicitly.
+    This method has turned out to be remarkably accurate for ternary systems, and I’m curious to see how well it generalizes to mixtures with more components. Since the binodal is uniquely determined by coexistence conditions, I'm also exploring ways to incorporate those conditions, both into the input features and the kernel itself, to boost the model’s accuracy.
+  image: 'assets/img/home.jpg'
+
+- title: 'Air Cargo Network Optimization (SavantX)'
   description: |
     As part of a one year contract from the U.S. Air Force, I set out to build a quantum solution for routing air cargo flights.
     The problem is what’s called “frustrated,” which is why most classical algorithms get trapped in local minima. At the same time, the system is far too large to embed directly on today’s Noisy Intermediate Scale Quantum (NISQ) devices.
-    To get around this, I designed a hybrid quantum–classical algorithm that breaks the problem into smaller pieces solvable on current hardware. This works because, even though the system is frustrated, it still has local symmetries that can be exploited to shrink the effective problem size.
-    On the quantum side, much of my work focused on fine-tuning schemes to balance two competing goals: achieving high-quality solutions while still satisfying strict constraints.
+    To get around this, I designed a hybrid quantum-classical algorithm that breaks the problem into smaller pieces solvable on current hardware. This works because, even though the system is frustrated, it still has local symmetries that can be exploited to shrink the effective problem size.
+    On the quantum side, much of my work focused on fine-tuning schemes to balance two competing goals: achieving high-quality solutions while still satisfying hard constraints.
     This first stage of the work wrapped up with promising results, leading directly into a second phase with the U.S. Air Force.
+  image: 'assets/img/airforce.png'
+
+- title: 'Cosmological Simulation (Bachelor Thesis)'
+  description: |
+    In my bachelor thesis, I adapted the cosmological simulation codebase <a href="https://arxiv.org/abs/1604.06065"><em>gevolution</em></a> to study how temporal perturbations to cosmological parameters affect structure formation.
+    One of the main findings was that perturbations to the gravitational potential are far more time-sensitive than those to the Hubble parameter. This likely stems from the fact that the potential depends on the inverse square of distance, making it highly responsive to even small changes in the matter distribution—whereas the Hubble parameter behaves more like a spatial average.
+    This project required me to understand every component of running an efficient N-body simulation: mapping particles to a mesh, solving for the gravitational potential in Fourier space, and evolving particles using a leapfrog integrator.
+    You can read the full thesis <a href="\publications\Bachelorarbeit.pdf"><em>here</em></a>.
+    
   image: 'assets/img/home.jpg'
