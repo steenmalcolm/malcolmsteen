@@ -19,13 +19,13 @@ layout: default
         <div class="col-md-4">
           {% if project.video %}
           <video controls class="img-fluid rounded" style="max-width: 450px; heigh: auto;">
-            <source src=" /{{ project.video }}" type="video/mp4">
+            <source src=" {{ project.video }}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           {% endif %}
           {% if project.image %}
           <a>{{ site.baseurl }}</a>
-          <img src="/{{ project.image }}" alt="{{ project.title }}" class="img-fluid rounded"
+          <img src="{{ project.image }}" alt="{{ project.title }}" class="img-fluid rounded"
             style="max-width: 550px; heigh: auto;">
           {% endif %}
         </div>
