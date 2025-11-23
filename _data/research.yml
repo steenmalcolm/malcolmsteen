@@ -2,18 +2,18 @@
   description: |
     Most of what we know about phase separation comes from studies of binary mixtures, but ternary mixtures are much less understood. In my project I look at some of the unique properties of these systems.
     To begin, I turned to the free energy and using a three state Ising model, uncovered how local and gradient energy terms can be related.
-    Building on this, I looked at the equilibrium profiles of ternary mixtures. Their shape follows from the Euler-Lagrange equations, though solving them directly is intractable. Instead, I developed an analytical approximation that only requires information about the bulk phases, yet still lets us calculate important thermodynamic properties like the surface tension.
+    Building on this, I looked at the equilibrium profiles of ternary mixtures. Their shape follows from the Euler-Lagrange equations, though solving them directly is intractable. Instead, I developed an analytical approximation that only requires information about the bulk phases, yet still lets us calculate important thermodynamic properties like the surface tension (see figure).
     To check the accuracy of this approach, I also run field-based simulations. For this, I developed a semi-implicit solver that essentially acts as a low-pass filter, allowing time steps orders of magnitude larger than before and greatly improving efficiency.
-  image: 'assets/img/home.jpg'
+    I am increadibly lucky to be working on this project with David Zwicker, whose deep physical intuition and expertise in phase separation have been invaluable and Stefan Köster, who has provided essential guidance on both the theoretical and numerical aspects.
+  image: 'assets/img/surfacetension.png'
 
 - title: 'Coexistence Curve (Masters Thesis Ongoing)'
   description: |
     Finding the binodal for multicomponent mixtures is computationally expensive, especially when the interactions between species changes.
-    In this project, I set out to develope a stepping scheme which traces out the coexistence curve by expanding the excess chemical potential and osmotic pressure.
-    This method is strikingly efficient, allowing us to compute the entire phase diagram including higher order phase regions in the matter of seconds.
+    In this project, I set out to develope a stepping scheme which traces out the coexistence curve by expanding the excess chemical potential and osmotic pressure to first order. This method is strikingly efficient, allowing us to compute the entire phase diagram to arbitrarily high precision in a matter of seconds.
     This lays the groundwork for multiple exciting applications, such as classifying the possible topologies of ternary phase diagrams or uncovering design rules for targeted phase behavior in mixtures with more components.
-    One can also use the same framework to quantify the susceptibility of phase concentrations to perturbations in the interaction matrix, which has implications for understanding how robust phase behavior is to changes in environmental conditions.
-  image: 'assets/img/binodal_stepper.jpg'
+    One can also use the same framework to quantify the susceptibility of condensates to perturbations in the interaction matrix, which has practical implications for understanding how robust phase behavior is to changes in environmental conditions.
+  image: 'assets/img/binodal_stepper.png'
 
 - title: 'Air Cargo Network Optimization (SavantX)'
   description: |
