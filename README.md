@@ -16,6 +16,8 @@ For a guide on how to deploy a Jekyll site using GitHub Pages, please check out 
 
 If you like my work then please consider supporting me with [Ko-fi](https://ko-fi.com/paulle).
 
+Test
+
 ## Installation
 
 ### Ruby Gem Method
