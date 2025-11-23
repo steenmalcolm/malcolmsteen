@@ -1,17 +1,19 @@
-- title: 'Ternary Mixtures (Masters Thesis Ongoing)'
+- title: 'Surface Tension in Ternary Mixtures (Masters Thesis Ongoing)'
   description: |
     Most of what we know about phase separation comes from studies of binary mixtures, but ternary mixtures are much less understood. In my project I look at some of the unique properties of these systems.
-    To begin, I turned to the free energy and using a three state Ising model, uncovered how local and gradient energy terms are related.
+    To begin, I turned to the free energy and using a three state Ising model, uncovered how local and gradient energy terms can be related.
     Building on this, I looked at the equilibrium profiles of ternary mixtures. Their shape follows from the Euler-Lagrange equations, though solving them directly is intractable. Instead, I developed an analytical approximation that only requires information about the bulk phases, yet still lets us calculate important thermodynamic properties like the surface tension.
     To check the accuracy of this approach, I also run field-based simulations. For this, I developed a semi-implicit solver that essentially acts as a low-pass filter, allowing time steps orders of magnitude larger than before and greatly improving efficiency.
   image: 'assets/img/home.jpg'
 
 - title: 'Coexistence Curve (Masters Thesis Ongoing)'
   description: |
-    Finding the binodal for ternary mixtures is computationally expensive, especially since it has to be repeated for every new interaction matrix between species. In this project, I set out to build a kernel-based Support Vector Machine (SVM) that can learn to interpolate the coexistence curve, specifically for interaction matrices not included in the training data.
-    The training set consists of labeled points in phase space including their interaction matrix. The coexistence curve is defined by an implicit equation, but with a polynomial kernel, the SVM can solve it explicitly.
-    This method has turned out to be remarkably accurate for ternary systems, and I’m curious to see how well it generalizes to mixtures with more components. Since the binodal is uniquely determined by coexistence conditions, I'm also exploring ways to incorporate those conditions, both into the input features and the kernel itself, to boost the model’s accuracy.
-  image: 'assets/img/home.jpg'
+    Finding the binodal for multicomponent mixtures is computationally expensive, especially when the interactions between species changes.
+    In this project, I set out to develope a stepping scheme which traces out the coexistence curve by expanding the excess chemical potential and osmotic pressure.
+    This method is strikingly efficient, allowing us to compute the entire phase diagram including higher order phase regions in the matter of seconds.
+    This lays the groundwork for multiple exciting applications, such as classifying the possible topologies of ternary phase diagrams or uncovering design rules for targeted phase behavior in mixtures with more components.
+    One can also use the same framework to quantify the susceptibility of phase concentrations to perturbations in the interaction matrix, which has implications for understanding how robust phase behavior is to changes in environmental conditions.
+  image: 'assets/img/binodal_stepper.jpg'
 
 - title: 'Air Cargo Network Optimization (SavantX)'
   description: |
