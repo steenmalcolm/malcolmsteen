@@ -18,7 +18,7 @@
 - title: 'Air Cargo Network Optimization (SavantX)'
   description: |
     As part of a one year contract from the U.S. Air Force, I set out to build a quantum solution for routing air cargo flights.
-    The problem is what’s called “frustrated,” which is why most classical algorithms get trapped in local minima. At the same time, the system is far too large to embed directly on today’s Noisy Intermediate Scale Quantum (NISQ) devices.
+    The problem is “frustrated,” so most classical heuristics tend to get stuck in local minima. Quantum approaches can, in principle, traverse these landscapes more effectively, using interference and tunneling to make non-local moves, but the full problem is still too large to embed on today’s NISQ hardware.
     To get around this, I designed a hybrid quantum-classical algorithm that breaks the problem into smaller pieces solvable on current hardware. This works because, even though the system is frustrated, it still has local symmetries that can be exploited to shrink the effective problem size.
     On the quantum side, much of my work focused on fine-tuning schemes to balance two competing goals: achieving high-quality solutions while still satisfying hard constraints.
     This first stage of the work wrapped up with promising results, leading directly into a second phase with the U.S. Air Force.
@@ -28,6 +28,15 @@
   description: |
     In my bachelor thesis, I adapted the cosmological simulation codebase <a href="https://arxiv.org/abs/1604.06065"><em>gevolution</em></a> to study how temporal perturbations to cosmological parameters affect structure formation.
     One of the main findings was that perturbations to the gravitational potential are far more time-sensitive than those to the Hubble parameter. This likely stems from the fact that the potential depends on the inverse square of distance, making it highly responsive to even small changes in the matter distribution—whereas the Hubble parameter behaves more like a spatial average.
-    This project required me to understand every component of running an efficient N-body simulation: mapping particles to a mesh, solving for the gravitational potential in Fourier space, and evolving particles using a leapfrog integrator.
+    This project required me to understand every component of running an efficient N-body simulation: mapping particles to a mesh, solving for the gravitational potential in Fourier space, and evolving particles using a leapfrog integrator. The video is from my own <a href="https://github.com/steenmalcolm/n_body_simulation"><em>N-body simulation code</em></a>.
+
     You can read the full thesis <a href="\publications\Bachelorarbeit.pdf"><em>here</em></a>.
   video: 'assets/videos/simulation.mp4'
+
+- title: "SSH Tunneling (Research Assistant)"
+  description: |
+    As a research assistant, I helped develop the <a href="https://vispa.physik.rwth-aachen.de/index.html"><em>Vispa platform</em></a>, a web interface for running physics analyses on remote HPC clusters.
+    My main contribution was implementing SSH tunneling so users could securely reach internal services and compute nodes behind the gateway host with a single click.
+    On the front end, I built a simple UI for managing SSH keys and connections. On the back end, I wired up port forwarding and key provisioning to establish and tear down tunnels reliably.
+    I don’t plan to go into web development, yet I liked learning async JavaScript, putting together React front ends, and discovering the nuances of web security.
+  image: 'assets/img/vispa.png'
