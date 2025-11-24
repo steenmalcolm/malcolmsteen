@@ -30,7 +30,7 @@
     One of the main findings was that perturbations to the gravitational potential are far more time-sensitive than those to the Hubble parameter. This likely stems from the fact that the potential depends on the inverse square of distance, making it highly responsive to even small changes in the matter distribution—whereas the Hubble parameter behaves more like a spatial average.
     This project required me to understand every component of running an efficient N-body simulation: mapping particles to a mesh, solving for the gravitational potential in Fourier space, and evolving particles using a leapfrog integrator. The video is from my own <a href="https://github.com/steenmalcolm/n_body_simulation"><em>N-body simulation code</em></a>.
 
-    You can read the full thesis <a href="\publications\Bachelorarbeit.pdf"><em>here</em></a>.
+    You can read the full thesis <a href="{{ site.baseurl }}\assets\files\Bachelorarbeit.pdf"><em>here</em></a>.
   video: 'assets/videos/simulation.mp4'
 
 - title: "SSH Tunneling (Research Assistant)"
